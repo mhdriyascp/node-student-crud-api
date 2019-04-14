@@ -1,0 +1,4 @@
+# Ignored Directories
+node_modules/
+db/
+

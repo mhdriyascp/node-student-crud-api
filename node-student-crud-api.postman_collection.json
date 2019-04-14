@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "d1efc352-cac1-11f1-f775-2fd03f9079a5",
+		"name": "node-student-crud-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3300/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"students"
+					]
+				},
+				"description": "To get all students"
+			},
+			"response": []
+		},
+		{
+			"name": "Get student by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3300/student/TQEkemD2dDFXjMy3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"student",
+						"TQEkemD2dDFXjMy3"
+					]
+				},
+				"description": "To get a sudent data of the given ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jack\",\n    \"age\": 26,\n    \"dob\": \"1992-02-20\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3300/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"student"
+					]
+				},
+				"description": "To add a student"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3300/student/BCItW7EyACAUOz6X",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"student",
+						"BCItW7EyACAUOz6X"
+					]
+				},
+				"description": "To add a student"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jack111\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3300/student/BCItW7EyACAUOz6X",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"student",
+						"BCItW7EyACAUOz6X"
+					]
+				},
+				"description": "To add a student"
+			},
+			"response": []
+		}
+	]
+}
